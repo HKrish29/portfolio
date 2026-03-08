@@ -1,0 +1,185 @@
+/* Experience Section */
+.exp__code-comment {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    font-size: 0.6em;
+}
+
+.exp__timeline {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exp__timeline-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--neon-green), var(--neon-blue), var(--neon-purple));
+    opacity: 0.3;
+}
+
+/* Card */
+.exp__card {
+    padding: 28px 32px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.exp__card::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 32px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--neon-green);
+    border: 2px solid var(--bg-primary);
+    box-shadow: 0 0 10px var(--neon-green-glow);
+}
+
+.exp__card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.exp__card-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.exp__status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.exp__status-dot--active {
+    background: var(--neon-green);
+    box-shadow: 0 0 8px var(--neon-green-glow);
+    animation: glow-pulse 2s infinite;
+}
+
+.exp__status-dot--completed {
+    background: var(--text-dim);
+}
+
+.exp__card-year {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--neon-green);
+}
+
+.exp__card-location {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    background: rgba(0, 255, 136, 0.05);
+    padding: 3px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.exp__card-role {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.exp__card-company {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--neon-blue);
+    margin-bottom: 16px;
+}
+
+.exp__card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.exp__card-list li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+.exp__list-arrow {
+    color: var(--neon-green);
+    font-size: 0.8rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.exp__card-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp__tech-tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--neon-green-dim);
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(0, 255, 136, 0.06);
+    border: 1px solid rgba(0, 255, 136, 0.12);
+    transition: all var(--transition-fast);
+}
+
+.exp__tech-tag:hover {
+    background: rgba(0, 255, 136, 0.12);
+    border-color: var(--neon-green-dim);
+    box-shadow: 0 0 10px var(--neon-green-glow);
+}
+
+/* Education */
+.exp__edu-card {
+    padding: 24px 28px;
+}
+
+.exp__edu-gpa {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--neon-green);
+    background: rgba(0, 255, 136, 0.08);
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .exp__timeline-line {
+        left: 10px;
+    }
+
+    .exp__card {
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+    .exp__card::before {
+        left: -28px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .exp__card-role {
+        font-size: 1.1rem;
+    }
+}
