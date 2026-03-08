@@ -21,6 +21,31 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+.loading-logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--neon-green);
+    box-shadow: 0 0 20px var(--neon-green-glow);
+    animation: portal-pulse 2s ease-in-out infinite;
+}
+
+@keyframes portal-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px var(--neon-green-glow);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px var(--neon-green-glow);
+    }
 }
 
 .loading-bracket {
@@ -34,8 +59,15 @@
 }
 
 @keyframes pulse-bracket {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
 }
 
 .loading-bar-container {
@@ -70,7 +102,7 @@
     .loading-logo {
         font-size: 3rem;
     }
-    
+
     .loading-bar-container {
         width: 250px;
     }

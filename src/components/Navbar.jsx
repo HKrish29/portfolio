@@ -45,6 +45,7 @@ const Navbar = () => {
                     onClick={() => navigate('/')}
                     style={{ cursor: 'pointer' }}
                 >
+                    <img src="/logo.jpeg" alt="HM Logo" className="navbar__logo-img" />
                     <span className="navbar__logo-bracket">{`{`}</span>
                     <span className="navbar__logo-text">HM</span>
                     <span className="navbar__logo-bracket">{`}`}</span>

@@ -35,6 +35,16 @@
     display: flex;
     align-items: center;
     user-select: none;
+    gap: 8px;
+}
+
+.navbar__logo-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--neon-green);
+    box-shadow: 0 0 10px var(--neon-green-glow);
 }
 
 .navbar__logo-bracket {

@@ -32,6 +32,7 @@ const LoadingScreen = () => {
                 >
                     <div className="loading-content">
                         <div className="loading-logo">
+                            <img src="/logo.jpeg" alt="HM Logo" className="loading-logo-img" />
                             <span className="loading-bracket">{'{'}</span>
                             <span className="loading-text">HM</span>
                             <span className="loading-bracket">{'}'}</span>

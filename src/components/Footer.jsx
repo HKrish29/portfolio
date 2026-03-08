@@ -18,6 +18,7 @@ const Footer = () => {
                             viewport={{ once: true }}
                         >
                             <span className="footer__logo">
+                                <img src="/logo.jpeg" alt="HM Logo" className="footer__logo-img" />
                                 <span className="footer__bracket">{`{`}</span>
                                 <span className="footer__logo-text">HM</span>
                                 <span className="footer__bracket">{`}`}</span>
