@@ -5,14 +5,14 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#06060f",
-  "theme_color": "#00ff88",
+  "theme_color": "#06060f",
   "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/logo.jpeg",
       "sizes": "192x192 512x512",
       "type": "image/jpeg",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
